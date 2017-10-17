@@ -1,0 +1,1 @@
+function [res] = update_weight_once(input,weight,output,ln)   [row,col] = size(input);   inc = 1;   while inc <= row %counts upto 100     weight = nn(input(inc,:),weight,output,ln);     inc = inc + 1;   end   res = weight;end 
